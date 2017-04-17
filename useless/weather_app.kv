@@ -1,0 +1,27 @@
+#:kivy 1.0.9
+
+
+<Temperature>:
+    font_size: 70
+    text: '84°'
+
+<Weather>:
+    font_size: 50
+    text: 'STORMS'
+
+
+<Game>:
+    temp: temp
+    conditions: conditions
+    paint: paint
+
+    Temperature:
+        id: temp
+        center: self.parent.center
+
+    Weather:
+        id: conditions
+        center: self.parent.center
+
+    MyPaintWidget:
+        id: paint
